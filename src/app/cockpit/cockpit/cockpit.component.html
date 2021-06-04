@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-12">
+      <ui5-label>Add new Servers or blueprints!</ui5-label>
+      <ui5-label>Server Name</ui5-label>
+      <ui5-input 
+        type="text" 
+        class="form-control" 
+        #serverNameInput></ui5-input>
+      <ui5-label>Server Content</ui5-label>
+      <ui5-input 
+        type="text" 
+        class="form-control" 
+        #serverContentInput></ui5-input>
+      <br>
+      <ui5-button
+        class="btn btn-primary"
+        (click)="onAddServer(serverNameInput, serverContentInput)">Add Server</ui5-button>
+      <ui5-button
+        class="btn btn-primary"
+        (click)="onAddBlueprint(serverNameInput, serverContentInput)">Add Server Blueprint</ui5-button>
+    </div>
+</div>
